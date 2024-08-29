@@ -1,15 +1,27 @@
 
 # NAME
 
-Mojo::Role::Retry - It's new $module
+Mojo::Role::Retry - Runs code in subprocess and retry
 
 # SYNOPSIS
 
-    use Mojo::Role::Retry;
+    package My::Mojo::Class {
+      use Mojo::Base -base;
+      use Role::Tiny::With;
+      with qw/Mojo::Role::Retry/;
+    }
+
+    package main
+    use Mojo::IOLoop;
+    my $obj = My::Mojo::Class->new;
+    $obj->code_retry( sub { sleep 5; return 'Finished' } )
+        ->subscribe( sub { say "Subprocess returned: $_[0]" } );
+    Mojo::IOLoop->start unless Mojo::IOLoop->is_running;
 
 # DESCRIPTION
 
-Mojo::Role::Retry is ...
+Mojo::Role::Retry is role for setting code to run in a child process.
+Returning an RxPerl Observable
 
 # LICENSE
 

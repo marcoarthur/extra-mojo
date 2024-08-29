@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Runs code in subprocess and retry",
    "author" : [
       "Marco Silva <arthurpbs@gmail.com>"
    ],
@@ -42,11 +42,16 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "Mojo::Base" : "0",
+            "Mojo::IOLoop" : "0",
+            "RxPerl::Mojo" : "0",
+            "perl" : "v5.38.0"
          }
       },
       "test" : {
          "requires" : {
+            "Role::Tiny::With" : "0",
+            "Test2::V0" : "0",
             "Test::More" : "0.98"
          }
       }
