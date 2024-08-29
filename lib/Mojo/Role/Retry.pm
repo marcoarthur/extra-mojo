@@ -2,6 +2,7 @@ package Mojo::Role::Retry;
 use Mojo::Base -strict, -signatures, -role;
 use RxPerl::Mojo ':all';
 use Mojo::IOLoop;
+use v5.38;
 use Carp qw(croak);
 
 our $VERSION = "0.01";
