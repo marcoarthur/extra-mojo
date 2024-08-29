@@ -1,6 +1,14 @@
-requires 'perl', '5.008001';
+requires 'Mojo::Base';
+requires 'Mojo::IOLoop';
+requires 'RxPerl::Mojo';
+requires 'perl', 'v5.38.0';
 
-on 'test' => sub {
-    requires 'Test::More', '0.98';
+on configure => sub {
+    requires 'Module::Build::Tiny', '0.035';
 };
 
+on test => sub {
+    requires 'Role::Tiny::With';
+    requires 'Test2::V0';
+    requires 'Test::More', '0.98';
+};
