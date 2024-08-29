@@ -57,6 +57,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/marcoarthur/extra-mojo/issues"
+      },
+      "homepage" : "https://github.com/marcoarthur/extra-mojo",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/marcoarthur/extra-mojo.git",
+         "web" : "https://github.com/marcoarthur/extra-mojo"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 1

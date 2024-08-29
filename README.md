@@ -1,4 +1,4 @@
-
+[![Actions Status](https://github.com/marcoarthur/extra-mojo/actions/workflows/test.yml/badge.svg)](https://github.com/marcoarthur/extra-mojo/actions)
 # NAME
 
 Mojo::Role::Retry - Runs code in subprocess and retry
