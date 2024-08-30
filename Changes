@@ -2,6 +2,9 @@ Revision history for Perl extension Mojo-Role-Retry
 
 {{$NEXT}}
 
+0.02 2024-08-30T11:19:41Z
+    - change build system (Module::Build) for easy test coverage data
+
 0.01 2024-08-29T20:06:47Z
 
     - original version

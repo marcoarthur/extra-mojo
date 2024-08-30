@@ -5,7 +5,7 @@ use Mojo::IOLoop;
 use v5.38;
 use Carp qw(croak);
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 has retries => sub { 3 };
 
