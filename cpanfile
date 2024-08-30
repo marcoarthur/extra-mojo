@@ -4,7 +4,7 @@ requires 'RxPerl::Mojo';
 requires 'perl', 'v5.38.0';
 
 on configure => sub {
-    requires 'Module::Build::Tiny', '0.035';
+    requires 'Module::Build';
 };
 
 on test => sub {
